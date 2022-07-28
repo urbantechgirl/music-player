@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>made in lagos</title>
+
+    </head>
+  
+    <body id="body">
+      
+      <div class="container">
+      
+      <div class="main">
+       
+      <div class="format">
+      
+      <div class="track-art"></div>
+      
+      <div class="track-name">Track Name</div>
+      
+      <div class="track-artist">Track Artist</div>
+      
+      </div>
+       
+      <div class="buttons">
+      
+      <div class="prev-track" onclick="prevTrack()">
+      
+      <span class="fa fa-step-backward fa-2x" id="icon1"></span>
+      
+      </div>
+      
+      <div class="playpause-track" onclick="playpauseTrack()">
+      
+      <span class="fa fa-play-circle fa-4x" id="icon2"></span>
+      
+      </div>
+      
+      <div class="next-track" onclick="nextTrack()">
+      
+      <span class="fa fa-step-forward fa-2x" id="icon3"></span>
+      
+      </div>
+      
+      </div>
+      
+      <div class="tools">
+        
+      <span class="fa fa-random icon fa-2x" id="icon4" onclick="random()"></span>
+      
+      <span class="fa fa-heart icon fa-2x" id="icon5" onclick="like()"></span>
+      
+      <span class="fa fa-volume-mute icon fa-2x" id="icon6" onclick="mute()"></span>
+      
+      </div>
+      
+      <div class="slider_container">
+      
+      <div class="current-time">00:00</div>
+      
+      <input type="range" min="1" max="100"
+      value="0" class="seek_slider" onchange="seekTo()" id="seek">
+      
+      <div class="total-duration">00:00</div>
+      
+      </div>
+       
+      <div class="slider_container">
+      
+      <span class="fa fa-volume-down" id="icon7"></span>
+      
+      <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()" id="volume">
+      
+      <span class="fa fa-volume-up" id="icon8"></span>
+      
+      </div>
+        <!-- Load the main script for the player -->
+  <script src="main.js"></script>
+      
+      </div>
+      
+      
+      
+      </div>
+  
+
+</body>
+</html>
